@@ -118,5 +118,5 @@ app.get("/map", (req, res) => {
 //==============
 // SERVER
 //==============
-app.listen(3001, 'localhost', function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
+app.listen(process.env.PORT, process.env.IP, function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
 
