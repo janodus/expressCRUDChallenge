@@ -123,8 +123,8 @@ app.get("*", (req, res) => {
 //==============
 // SERVER
 //==============
-app.listen(3001, 'localhost', function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
-// app.listen(process.env.PORT, process.env.IP, () => {
-//   console.log("listening to server");
-// });
+// app.listen(3001, 'localhost', function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
+app.listen(process.env.PORT, process.env.IP, () => {
+  console.log("listening to server");
+});
 
