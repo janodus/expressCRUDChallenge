@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+<h1> The Coolest Spots Around</h1>
+<hr style="height: 10px">
+
+	<div class="row text-center">
+		<p>
+			<a href="/spots/new"><button class="btn btn-custom bottom-buttons">Add a new hangout</button></a>
+		</p>
+	</div>	
+
+	<div class="row" id="index_row">
+
+		<% spotList.forEach(function(spot){ %>
+				<div class='col-md-3 col-sm-5 col-xs-12 spot-card text-center thumbnail'> 
+					<h2><%= spot.name %></h1>
+					<h5><%= spot.address %></h3>
+					<h5><%= spot.reason %></h3>
+					<h5>id: <%= spot._id %>
+						<div class="text-center">
+							<a href="/spots/<%= spot._id %>"><button class="btn btn-custom more-info-button">More Info</button></a>
+						</div>
+				</div>
+		<% }); %>
+
+	</div>
+
+</div>
+
+<% include ../partials/footer %>

@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="container">
+
+<h1><%= spotData.name %></h1>
+
+	<div class="row" id="index_row">
+
+				<div class='col-md-12 col-sm-12 col-xs-12 spot-card text-center thumbnail'> 
+					<h2><%= spotData.name %></h1>
+					<h5><%= spotData.address %></h3>
+					<h5><%= spotData.reason %></h3>
+					<h5>id: <%= spotData._id %></h5>
+						<p>
+						<br>
+							<form action="/spots/<%= spotData.id %>?_method=DELETE" method="POST">
+								<button class="btn back-to-spots btn-custom">Delete</button>
+							</form>
+						</p>
+				</div>
+	
+	</div>
+
+
+
+	<div class="row text-center">
+		<p>
+			<a href="/spots"><button class="btn btn-custom back-to-spots"><< Back To Spots</button></a>
+		</p>
+	</div>
+
+</div>
+
+<% include ../partials/footer %>
+
+
+

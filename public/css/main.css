@@ -1,0 +1,129 @@
+/*font-family: 'Bungee Inline', cursive;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+html, body {
+	padding: 0;
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+.container-fluid {
+	height: 100%;
+}
+
+.header {
+	border: 1px solid green;
+	text-align: center;
+	min-height: 100%;
+	background-image: url(https://blackrockdigital.github.io/startbootstrap-grayscale/img/intro-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.spot-card {
+	border: 1px solid gray;
+	min-height: 260px;
+	margin: 20px;
+	box-shadow: 2px 2px 5px #888888;
+}
+
+#index_row {
+	/*border: 1px solid blue;*/
+	margin-bottom: 40px;
+	display:flex;
+  	flex-wrap: wrap;
+  	justify-content: center ; /* for horizontal aligning of child divs */
+   	align-items : center
+}
+
+.more-info-card {
+	margin-top: 20px;
+}
+
+.back-to-spots {
+	display: inline-block;
+	margin-bottom: 36px;
+	background: none;
+	color: black;
+	border: 1px solid gray;
+}
+
+.more-info-button {
+	margin-top:20px;
+	background: none;
+	color: black;
+	border: 1px solid gray;
+
+}
+
+.bottom-buttons {
+
+	background: none;
+	color: black;
+	border: 1px solid gray;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type=text] {
+	display: block;
+	margin: 20px 0;
+	width: 300px;
+}
+
+.centered {
+	display: inline-block;
+	text-align: center;
+}
+
+.spacer-36 {
+	margin: 0 auto;
+	text-align: center;
+	background:black;
+	color: white;
+	height: 56px;
+	padding-top: 20px;
+}
+
+.btn-custom {
+	background: none;
+}
+
+.btn-custom:hover {
+	background: gray;
+	color: white;
+}
+
+.btn-custom:focus {
+	outline:0;
+}
+
+#map {
+	height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
