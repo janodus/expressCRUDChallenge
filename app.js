@@ -33,7 +33,7 @@ var Spot = mongoose.model("Spot", spotSchema);
 
 // home
 app.get("/", function(req, res){
-	res.render("home")
+	res.redirect("/spots");
 });
 
 // index
@@ -114,9 +114,17 @@ app.get("/map", (req, res) => {
 	res.render("./map")
 });
 
+// failsafe
+app.get("*", (req, res) => {
+	res.redirect("/spots");
+});
+
 
 //==============
 // SERVER
 //==============
-app.listen(process.env.PORT, process.env.IP, function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
+app.listen(3001, 'localhost', function(){console.log("LOCAL SERVER IS UP AND RUNNING")});
+// app.listen(process.env.PORT, process.env.IP, () => {
+//   console.log("listening to server");
+// });
 
